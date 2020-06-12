@@ -75,6 +75,12 @@ jobs:
     - name: Terraform Init
       run: terraform init
 
+    # Validate terraform
+    - name: Run a Terraform validate    
+      uses: docker://hashicorp/terraform:0.12.11
+      with:
+        entrypoint: terraform
+        args: validate
     # Checks that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
       run: terraform fmt -check
