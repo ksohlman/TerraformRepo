@@ -78,7 +78,7 @@ jobs:
     # Validate terraform
     - name: Run a Terraform validate    
       uses: docker://hashicorp/terraform:0.12.11
-      run: terraform init
+      # run: terraform init
       with:
         entrypoint: terraform
         args: validate
