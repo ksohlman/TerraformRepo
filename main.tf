@@ -7,7 +7,7 @@ provider "azurerm" {
 
 # Create a resource group
 resource "azurerm_resource_group" "rgKPSohlmanPilviakatemia2020Test" {
-  name     = "rgKPSohlmanPilviakatemia2020Test"
+  name     = "rgKPSohlmanPilviakatemia2020Test2"
   location = "France Central"
 }
 
